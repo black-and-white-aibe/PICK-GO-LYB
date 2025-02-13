@@ -1,0 +1,73 @@
+body {
+  font-family: "Jua", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* 전체 화면 좌우 여백 설정 */
+.screen {
+  padding: 0 240px; /* 좌우 여백 100px */
+}
+
+/* 네비게이션 바 스타일 */
+.custom-navbar {
+  height: 80px; /* 네비게이션 바 높이 */
+  padding: 0 20px; /* 네비게이션 바 전체 좌우 여백 */
+  background-color: #ffffff !important; /* 네비게이션 바 배경색을 흰색으로 설정 */
+  position: relative;
+}
+
+/* 로고 (좌측 여백) */
+/* .navbar-brand {
+    margin-left: 10px; 
+  } */
+
+/* 랭킹 보기 컨테이너 (우측 여백) */
+/* .navbar-nav {
+    margin-right: 10px; 
+  } */
+
+/* 랭킹 보기 글자 스타일 */
+.navbar-nav .nav-link {
+  color: #000000 !important; /* 글자를 검은색으로 설정 */
+  font-weight: 500; /* 글자 두께를 살짝 강조 */
+  font-size: 16px; /* 글자 크기 조정 */
+}
+
+/* 랭킹 보기 글자 호버 효과 */
+.navbar-nav .nav-link:hover,
+.navbar-collapse .nav-link:hover {
+  color: #333333 !important; /* 마우스를 올렸을 때 약간 어두운 검은색 */
+}
+
+/* 로고 이미지 스타일 */
+.logo {
+  width: 50px; /* 로고 크기 */
+  height: auto;
+}
+
+/* 반응형 스타일 */
+/* max-width 값 = 여백 없애는 기준 */
+@media (max-width: 768px) {
+  .screen {
+    padding: 0 20px; /* 모바일에서는 여백을 줄임 */
+  }
+
+  /* 햄버거 메뉴 안의 네비게이션 링크 스타일 */
+  .navbar-collapse {
+    background-color: #ffffff; /* 반응형 메뉴 배경색 */
+
+    position: absolute;
+    top: 80px; /* 네비게이션 바 바로 아래에 위치 */
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* 다른 요소 위에 위치 */
+  }
+
+  .navbar-collapse .nav-link {
+    display: block;
+    padding: 10px 20px;
+    text-align: right; /* 메뉴 글씨를 오른쪽 정렬 */
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
